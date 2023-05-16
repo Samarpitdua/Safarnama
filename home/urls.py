@@ -28,6 +28,8 @@ urlpatterns = [
     path('login', views.handleLogin ,name = "handleLogin"),
     path('logout', views.handleLogout ,name = "handleLogout"),
     path('booking', views.DoBooking ,name = "DoBooking"),
+    path('guides', views.guides ,name = "Guides"),
+    path('checkout_guide', views.checkout_guides, name="checkout_guides"),
     # path('otp' , views.otp , name = "otp")
     
 ]

@@ -28,6 +28,15 @@ def index(request):
     return render(request,"display.html", context)
 
 # hotels
+def guides(request):
+    # data = Hotels.objects.all()
+    # print("->", data.values())
+    # context = {
+    #     'data' : data
+    # }
+    return render(request , "guides.html")
+def checkout_guides(request):
+    return render(request , "checkout_guide.html")
 def hotels(request):
     data = Hotels.objects.all()
     print("->", data.values())
